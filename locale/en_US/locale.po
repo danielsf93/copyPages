@@ -36,7 +36,7 @@ msgid "plugins.generic.copyPages.editAddContent"
 msgstr "Edit/Add Content"
 
 msgid "plugins.generic.copyPages.addCopyPage"
-msgstr "Add Copy Page"
+msgstr "Adicionar página de unidade"
 
 msgid "plugins.generic.copyPages.addNewPage"
 msgstr "Add New Page"

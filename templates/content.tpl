@@ -14,4 +14,7 @@
 	{$content}
 </div>
 
+<hr>
+<b>Mostar conteúdo de copyright aqui</b>
+
 {include file="frontend/components/footer.tpl"}
