@@ -1,0 +1,72 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-09-30T15:49:00-07:00\n"
+"PO-Revision-Date: 2019-09-30T15:49:00-07:00\n"
+"Language: \n"
+
+msgid "plugins.generic.copyPages.displayName"
+msgstr "Copy Pages Plugin"
+
+msgid "plugins.generic.copyPages.description"
+msgstr "This plugin allows Copy Content Management."
+
+msgid "plugins.generic.copyPages.copyPages"
+msgstr "Copy Pages"
+
+msgid "plugins.generic.copyPages.pageTitle"
+msgstr "Title"
+
+msgid "plugins.generic.copyPages.content"
+msgstr "Content"
+
+msgid "plugins.generic.copyPages.path"
+msgstr "Path"
+
+msgid "plugins.generic.copyPages.requirement.tinymce"
+msgstr "<p><strong>The TinyMCE Plugin must be installed and enabled in order to add/edit content.</strong></p>"
+
+msgid "plugins.generic.copyPages.editAddContent"
+msgstr "Edit/Add Content"
+
+msgid "plugins.generic.copyPages.addCopyPage"
+msgstr "Add Copy Page"
+
+msgid "plugins.generic.copyPages.addNewPage"
+msgstr "Add New Page"
+
+msgid "plugins.generic.copyPages.editCopyPage"
+msgstr "Edit Copy Page"
+
+msgid "plugins.generic.copyPages.noneCreated"
+msgstr "No copy pages have been created."
+
+msgid "plugins.generic.copyPages.settingInstructions"
+msgstr "The form below shows you all the copy pages you have created.  You can edit or delete the pages using the links on the right-hand side."
+
+msgid "plugins.generic.copyPages.editInstructions"
+msgstr "Use the form below to add/edit page content."
+
+msgid "plugins.generic.copyPages.pathRegEx"
+msgstr "The path field must contain only alphanumeric characters plus '.', '/', '-', and '_'."
+
+msgid "plugins.generic.copyPages.viewInstructions"
+msgstr "<p>This page will be accessible at: <blockquote>{$pagesPath}</blockquote>...where %PATH% is the path entered above. <strong>Note:</strong> No two pages can have the same path. Using paths that are built into the system may cause you to lose access to important functions.</p>"
+
+msgid "plugins.generic.copyPages.duplicatePath"
+msgstr "This path already exists for another copy page."
+
+msgid "plugins.generic.copyPages.pageSaved"
+msgstr "Page successfully saved."
+
+msgid "plugins.generic.copyPages.pageDeleted"
+msgstr "Page successfully deleted."
+
+msgid "plugins.generic.copyPages.noneExist"
+msgstr "No pages have been created"

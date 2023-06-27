@@ -1,0 +1,81 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30T11:56:00-07:00\n"
+"PO-Revision-Date: 2020-06-06 02:30+0000\n"
+"Last-Translator: Diego José Macêdo <diegojmacedo@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <http://translate.pkp.sfu.ca/projects/"
+"plugins/copy-pages-plugin/pt_BR/>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.9.1\n"
+
+msgid "plugins.generic.copyPages.displayName"
+msgstr "Páginas estáticas"
+
+msgid "plugins.generic.copyPages.description"
+msgstr "Este plugin permite gerenciar páginas estáticas."
+
+msgid "plugins.generic.copyPages.pageTitle"
+msgstr "Título"
+
+msgid "plugins.generic.copyPages.content"
+msgstr "Conteúdo"
+
+msgid "plugins.generic.copyPages.path"
+msgstr "Caminho"
+
+msgid "plugins.generic.copyPages.requirement.tinymce"
+msgstr ""
+"<p><strong>O Editor TinyMCE deve estar instalado e habilitado para incluir/"
+"editar conteúdo.</strong></p>"
+
+msgid "plugins.generic.copyPages.editAddContent"
+msgstr "Editar/incluir conteúdo"
+
+msgid "plugins.generic.copyPages.addStaticPage"
+msgstr "Incluir página estática"
+
+msgid "plugins.generic.copyPages.addNewPage"
+msgstr "Incluir nova página"
+
+msgid "plugins.generic.copyPages.editStaticPage"
+msgstr "Editar página estática"
+
+msgid "plugins.generic.copyPages.settingInstructions"
+msgstr "O formulário a seguir mostra todas as páginas estáticas já criadas. Você pode editar ou excluir as páginas por meio dos links disponíveis à direita."
+
+msgid "plugins.generic.copyPages.editInstructions"
+msgstr "Use o formulário para incluir/editar o conteúdo."
+
+msgid "plugins.generic.copyPages.duplicatePath"
+msgstr "Este caminho já existe para outra página estática."
+
+msgid "plugins.generic.copyPages.pageSaved"
+msgstr "Página salva com sucesso."
+
+msgid "plugins.generic.copyPages.pageDeleted"
+msgstr "Página excluída com sucesso."
+
+msgid "plugins.generic.copyPages.noneExist"
+msgstr "Nenhuma página criada"
+
+msgid "plugins.generic.copyPages.copyPages"
+msgstr "Páginas Estáticas"
+
+msgid "plugins.generic.copyPages.noneCreated"
+msgstr "Não há páginas estáticas criadas."
+
+msgid "plugins.generic.copyPages.pathRegEx"
+msgstr "O campo caminho deve conter apenas caracteres alfanuméricos mais, '/', '.' '-' e '_'."
+
+msgid "plugins.generic.copyPages.viewInstructions"
+msgstr ""
+"<p>Esta página será acessível em: <blockquote>{$pagesPath}</blockquote> ... "
+"onde %PATH% é o caminho digitado acima. <strong>Nota:</strong> Duas páginas "
+"não podem ter o mesmo caminho. Usar caminhos que já existem no sistema pode "
+"causar a perda de acesso a funções importantes.</p>"
