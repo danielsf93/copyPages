@@ -26,3 +26,8 @@ WHERE CONVERT(`setting_name` USING utf8) = 'copyrightHolder'
 
 <br><br>
 pensar em uma forma via php pegar essas informações existentes e criar os links automaticamente, pois são mais de 60 copyrights da s do portal da ABCD.
+
+<br><br>
+Analista corrigiu o código para: SELECT DISTINCT setting_value FROM publication_settings WHERE setting_name = 'copyrightHolder';
+<br>isso retornou 91 copyrights distintos, incluindo nomes pessoais, erros de escrita, mosod de escrita, etc. = inviável.
+
