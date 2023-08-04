@@ -27,7 +27,7 @@ class CopyPagesDAO extends DAO {
 		if ($contextId) $params[] = (int) $contextId;
 
 		$result = $this->retrieve(
-			'SELECT * FROM copy_pages WHERE copy_page_id = ?'
+			'SELECT * FROM static_pages WHERE static_page_id = ?'
 			. ($contextId?' AND context_id = ?':''),
 			$params
 		);
@@ -43,7 +43,7 @@ class CopyPagesDAO extends DAO {
 	 */
 	function getByContextId($contextId, $rangeInfo = null) {
 		$result = $this->retrieveRange(
-			'SELECT * FROM copy_pages WHERE context_id = ?',
+			'SELECT * FROM static_pages WHERE context_id = ?',
 			[(int) $contextId],
 			$rangeInfo
 		);
@@ -58,7 +58,7 @@ class CopyPagesDAO extends DAO {
 	 */
 	function getByPath($contextId, $path) {
 		$result = $this->retrieve(
-			'SELECT * FROM copy_pages WHERE context_id = ? AND path = ?',
+			'SELECT * FROM static_pages WHERE context_id = ? AND path = ?',
 			[(int) $contextId, $path]
 		);
 		$row = $result->current();
@@ -72,7 +72,7 @@ class CopyPagesDAO extends DAO {
 	 */
 	function insertObject($copyPage) {
 		$this->update(
-			'INSERT INTO copy_pages (context_id, path) VALUES (?, ?)',
+			'INSERT INTO static_pages (context_id, path) VALUES (?, ?)',
 			[(int) $copyPage->getContextId(), $copyPage->getPath()]
 		);
 
@@ -88,10 +88,10 @@ class CopyPagesDAO extends DAO {
 	 */
 	function updateObject($copyPage) {
 		$this->update(
-			'UPDATE	copy_pages
+			'UPDATE	static_pages
 			SET	context_id = ?,
 				path = ?
-			WHERE	copy_page_id = ?',
+			WHERE	static_page_id = ?',
 			[
 				(int) $copyPage->getContextId(),
 				$copyPage->getPath(),
@@ -107,11 +107,11 @@ class CopyPagesDAO extends DAO {
 	 */
 	function deleteById($copyPageId) {
 		$this->update(
-			'DELETE FROM copy_pages WHERE copy_page_id = ?',
+			'DELETE FROM static_pages WHERE static_page_id = ?',
 			[(int) $copyPageId]
 		);
 		$this->update(
-			'DELETE FROM copy_page_settings WHERE copy_page_id = ?',
+			'DELETE FROM static_page_settings WHERE static_page_id = ?',
 			[(int) $copyPageId]
 		);
 	}
@@ -138,11 +138,11 @@ class CopyPagesDAO extends DAO {
 	 */
 	function _fromRow($row) {
 		$copyPage = $this->newDataObject();
-		$copyPage->setId($row['copy_page_id']);
+		$copyPage->setId($row['static_page_id']);
 		$copyPage->setPath($row['path']);
 		$copyPage->setContextId($row['context_id']);
 
-		$this->getDataObjectSettings('copy_page_settings', 'copy_page_id', $row['copy_page_id'], $copyPage);
+		$this->getDataObjectSettings('static_page_settings', 'static_page_id', $row['static_page_id'], $copyPage);
 		return $copyPage;
 	}
 
@@ -151,7 +151,7 @@ class CopyPagesDAO extends DAO {
 	 * @return int
 	 */
 	function getInsertId() {
-		return $this->_getInsertId('copy_pages', 'copy_page_id');
+		return $this->_getInsertId('static_pages', 'static_page_id');
 	}
 
 	/**
@@ -167,8 +167,8 @@ class CopyPagesDAO extends DAO {
 	 * @param $author object
 	 */
 	function updateLocaleFields(&$copyPage) {
-		$this->updateDataObjectSettings('copy_page_settings', $copyPage,
-			['copy_page_id' => $copyPage->getId()]
+		$this->updateDataObjectSettings('static_page_settings', $copyPage,
+			['static_page_id' => $copyPage->getId()]
 		);
 	}
 }
