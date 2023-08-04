@@ -15,10 +15,10 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 
 msgid "plugins.generic.copyPages.displayName"
-msgstr "Páginas estáticas"
+msgstr "Páginas de copyright"
 
 msgid "plugins.generic.copyPages.description"
-msgstr "Este plugin permite gerenciar páginas estáticas."
+msgstr "Este plugin permite gerenciar Páginas de copyright."
 
 msgid "plugins.generic.copyPages.pageTitle"
 msgstr "Título"
@@ -47,7 +47,7 @@ msgid "plugins.generic.copyPages.editStaticPage"
 msgstr "Editar página estática"
 
 msgid "plugins.generic.copyPages.settingInstructions"
-msgstr "O formulário a seguir mostra todas as páginas estáticas já criadas. Você pode editar ou excluir as páginas por meio dos links disponíveis à direita."
+msgstr "O formulário a seguir mostra todas as Páginas de copyright já criadas. Você pode editar ou excluir as páginas por meio dos links disponíveis à direita."
 
 msgid "plugins.generic.copyPages.editInstructions"
 msgstr "Use o formulário para incluir/editar o conteúdo."
@@ -65,10 +65,10 @@ msgid "plugins.generic.copyPages.noneExist"
 msgstr "Nenhuma página criada"
 
 msgid "plugins.generic.copyPages.copyPages"
-msgstr "Páginas Estáticas"
+msgstr "Páginas de copyright"
 
 msgid "plugins.generic.copyPages.noneCreated"
-msgstr "Não há páginas estáticas criadas."
+msgstr "Não há Páginas de copyright criadas."
 
 msgid "plugins.generic.copyPages.pathRegEx"
 msgstr "O campo caminho deve conter apenas caracteres alfanuméricos mais, '/', '.' '-' e '_'."

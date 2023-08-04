@@ -53,10 +53,10 @@ class CopyPagesDAO extends DAO {
 	/**
 	 * Get a copy page by path.
 	 * @param $contextId int Context ID
-	 * @param $path string Path
+	 * @param $static_page_id string Path
 	 * @return CopyPage
 	 */
-	function getByPath($contextId, $path) {
+	function getByPath($contextId, $static_page_id) {
 		$result = $this->retrieve(
 			'SELECT * FROM static_pages WHERE context_id = ? AND path = ?',
 			[(int) $contextId, $path]

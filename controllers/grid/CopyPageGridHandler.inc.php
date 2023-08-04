@@ -76,10 +76,10 @@ class CopyPageGridHandler extends GridHandler {
 				'addCopyPage',
 				new AjaxModal(
 					$router->url($request, null, null, 'addCopyPage'),
-					__('plugins.generic.copyPages.addCopyPage'),
+					__('adicionar pagina de copyright'),
 					'modal_add_item'
 				),
-				__('plugins.generic.copyPages.addCopyPage'),
+				__('adicionar pagina de copyright'),
 				'add_item'
 			)
 		);
